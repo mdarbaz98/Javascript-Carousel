@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Space+Grotesk&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section {
+    min-height: 400px;
+    background: rgb(15, 23, 27);
+    color: #fff !important;
+    padding: 35px;
+    border-radius: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    box-shadow: 0 24px 50px rgb(0 0 0 / 25%);
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.img-div {
+    width: 155px;
+    height: 155px;
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+}
+
+p {
+    min-height: 75px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: solid 8px #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .card-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        width: 100%;
+        border-radius: 0%;
+        -webkit-border-radius: 0%;
+        -moz-border-radius: 0%;
+        -ms-border-radius: 0%;
+        -o-border-radius: 0%;
+    }
+
+    .main-body {
+        max-width: unset;
+    }
+}
