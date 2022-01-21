@@ -37,8 +37,6 @@ var random = document.getElementById("random");
 let currentItem = 0;
 
 // initial item
-window.addEventListener("load", showPerson(currentItem));
-
 window.addEventListener("DOMContentLoaded", function () {
   showPerson(currentItem);
 });
